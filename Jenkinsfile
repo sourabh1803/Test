@@ -1,13 +1,15 @@
 pipeline {
     agent any
     stages {
-        stage('testing pipeline'){
+        stage('First Pipeline'){
           steps{
-        		    echo 'test1'
-                sh 'mkdir from-jenkins'
-                sh 'touch from-jenkins/test.txt'
+        		python3 'First.py'
                 }
-
+        }
+        stage('Second Pipeline'){
+          steps{
+        		 python3 'Second.py'
+                }
            }
-}
-}
+           }
+		   }
