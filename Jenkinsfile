@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('First Pipeline'){
           steps{
-        		python3 'First.py'
+        		python3 First.py
                 }
         }
         stage('Second Pipeline'){
           steps{
-        		 python3 'Second.py'
+        		 python3 Second.py
                 }
            }
            }
