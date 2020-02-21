@@ -14,7 +14,7 @@ pipeline {
           steps{
         	  sh 'python3 /home/ubuntu/Third.py'
                 }	
-		
-           }
+	           }
            }
 		   }
+     }
