@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Acquire Pipeline'){
+        stage('Acquire'){
           steps{
         	   sh 'python3 /home/ubuntu/First.py'
                 }
