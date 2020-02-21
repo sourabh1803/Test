@@ -10,11 +10,11 @@ pipeline {
           steps{
         	  sh 'python3 /home/ubuntu/Second.py'
                 }
+	}	
 	stage('Test'){
           steps{
         	  sh 'python3 /home/ubuntu/Third.py'
                 }	
 	           }
-           }
-		   }
+         }
 }
