@@ -1,14 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Acquire'){
+         stage('Helm Chart Execution'){
           steps{
-        	   sh 'python3 /home/ubuntu/First.py'
-                }
-        }
-        stage('Onbaord'){
-          steps{
-        	  sh 'python3 /home/ubuntu/Second.py'
+        	  sh '/home/ubuntu/chart.sh'
                 }
 	}	
 	stage('Test'){
