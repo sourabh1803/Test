@@ -3,7 +3,7 @@ pipeline {
     stages {
          stage('Helm Chart Execution'){
           steps{
-        	  sh  'python3 /home/ubuntu/First.py'
+        	  sh  'sh /home/ubuntu/l.sh'
                 }
 	}	
 	stage('Test'){
