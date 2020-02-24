@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Virus Scan'){
           steps{
-        	   sh 'sh /home/ubuntu/virusscan.sh.sh'
+        	   sh 'sh /home/ubuntu/virusscan.sh'
                 }
         }
          }
