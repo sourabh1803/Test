@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Acquire'){
           steps{
-        	   sh 'python3 /home/ubuntu/First.py'
+        	   sh 'python3 /home/ubuntu/ftp.py'
                 }
         }
          }
