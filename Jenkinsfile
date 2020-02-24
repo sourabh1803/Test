@@ -3,7 +3,7 @@ pipeline {
     stages {
          stage('Helm Chart Execution'){
           steps{
-        	  sh  'sh /home/ubuntu/chart.sh'
+        	  sh  'sh /home/ubuntu/chart1.sh'
                 }
 	}	
 	stage('Test'){
