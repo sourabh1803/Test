@@ -3,7 +3,7 @@ pipeline {
     stages {
 	  stage('Acquire Packages'){
           steps{
-        	  sh  'python /home/ubuntu/ftp.py'
+        	  sh  'sh /home/ubuntu/ftp.sh'
                 }
 	}	
          stage('Helm Repo Update'){
