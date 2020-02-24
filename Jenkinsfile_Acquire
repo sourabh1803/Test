@@ -6,5 +6,15 @@ pipeline {
         	   sh 'sh /home/ubuntu/ftp.sh'
                 }
         }
+         stage('MD5 Check Sum'){
+          steps{
+        	   sh 'sh /home/ubuntu/checksum.sh'
+                }
+        }
+        stage('Virus Scan'){
+          steps{
+        	   sh 'sh /home/ubuntu/virusscan.sh.sh'
+                }
+        }
          }
 }
