@@ -1,14 +1,14 @@
 pipeline {
     agent any
     stages {
-         stage('Helm Chart Execution'){
+         stage('Helm Repo Update'){
           steps{
-        	  sh  'sh /home/ubuntu/chart1.sh'
+        	  sh  'sh /home/ubuntu/chart.sh'
                 }
 	}	
-	stage('Test'){
+	stage('Helm Chart Execution'){
           steps{
-        	  sh 'python3 /home/ubuntu/Third.py'
+        	  sh 'sh /home/ubuntu/chart1.sh'
                 }	
 	           }
          }
