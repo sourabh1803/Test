@@ -1,6 +1,11 @@
 pipeline {
     agent any
     stages {
+	  stage('Acquire Packages'){
+          steps{
+        	  sh  'python /home/ubuntu/ftp.py'
+                }
+	}	
          stage('Helm Repo Update'){
           steps{
         	  sh  'sh /home/ubuntu/chart.sh'
