@@ -8,7 +8,7 @@ entries:
     digest: 5d610481fb7d8612136722ab937bffe3739355f4c3c5718e1b10bed6b6de6bf6
     name: mychart
     urls:
-    - https://santoshtendolkar.github.io/helmchart/mychart-0.1.0.tgz
+    - https://sourabh1803.github.io/Test/mychart-0.1.0.tgz
     version: 0.1.0
 generated: "2020-02-21T11:08:04.999289983Z"
 
