@@ -4,17 +4,17 @@ pipeline {
 	  
          stage('Helm Repo Update'){
           steps{
-        	  sh  'sh /home/ubuntu/chart.sh'
+        	  sh  'sh /home/ubuntu/First.sh'
                 }
 	}	
 	    stage('Cleaning Repo with same Name'){
           steps{
-        	  sh 'sh /home/ubuntu/chart2.sh'
+        	  sh 'sh /home/ubuntu/second.sh'
                 }
 	    }	    
 	stage('Helm Chart Execution'){
           steps{
-        	  sh 'sh /home/ubuntu/chart1.sh'
+        	  sh 'sh /home/ubuntu/third.sh'
                 }	
 	           }
          }
