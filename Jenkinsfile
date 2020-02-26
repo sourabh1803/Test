@@ -5,7 +5,7 @@ pipeline {
          stage('Helm Repo Update'){
           steps{
         	     
-		     sh  '/home/ubuntu/repoupdate.sh'
+		  sh 'sh /home/ubuntu/repoupdate.sh'
                 }
 	}	
 	    stage('Cleaning Repo with same Name'){
