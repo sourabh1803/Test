@@ -4,7 +4,8 @@ pipeline {
 	  
          stage('Helm Repo Update'){
           steps{
-        	  sh  'sh /home/ubuntu/repoupdate.sh'
+        	     sh  'ssh ubuntu:ubuntu@10.90.73.189'
+		     sh  '/home/ubuntu/repoupdate.sh'
                 }
 	}	
 	    stage('Cleaning Repo with same Name'){
