@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Repo Cleanup'){
           steps{
-             	   sh 'python3 /home/ubuntu/connect1.py'
+             	   sh 'python /home/ubuntu/connect1.py'
                 }
         }
         }
