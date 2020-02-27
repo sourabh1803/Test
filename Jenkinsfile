@@ -3,7 +3,7 @@ pipeline {
     stages {
 	  stage('Helm Repo Update'){
           steps{
-             sh 'sh /home/ubuntu/repoupdate.sh'
+             sh 'python /home/ubuntu/connect.py'
                 }
 	}	
 	  stage('Cleaning Repo with same Name'){
@@ -13,7 +13,7 @@ pipeline {
 	    }	    
 	stage('Helm Chart Execution'){
           steps{
-        	  sh 'sh /home/ubuntu/chartadd.sh.sh'
+        	  sh 'sh /home/ubuntu/chartadd.sh'
                 }	
 	           }
          }
