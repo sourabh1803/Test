@@ -1,20 +1,15 @@
 pipeline {
     agent any
     stages {
-        stage('Acquire'){
+        stage('File Integrity Check'){
           steps{
-        	   sh 'sh /home/ubuntu/ftp.sh'
+        	   sh 'python /home/ubuntu/checksum.py'
                 }
                        }
-         stage('MD5 Check Sum'){
+         stage('Security Scan'){
           steps{
-        	   sh 'sh /home/ubuntu/checksum.sh'
+        	   sh 'python /home/ubuntu/scn.py'
                 }
-                              }
-        stage('Virus Scan'){
-          steps{
-        	   sh 'sh /home/ubuntu/viruscan.sh'
                 }
-                            }
             }
            }
