@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-	  	  
+	   
 	  stage('MD5 File Check Sum'){
           steps{
              sh 'python /home/ubuntu/checksum.py'
