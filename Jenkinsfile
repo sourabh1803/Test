@@ -8,12 +8,12 @@ pipeline {
 	}	
 	  stage('Cleaning Repo with same Name'){
           steps{
-        	  sh 'sh /home/ubuntu/try.sh'
+        	  sh 'python /home/ubuntu/connect1.py'
                 }
 	    }	    
 	stage('Helm Chart Execution'){
           steps{
-        	  sh 'sh /home/ubuntu/chartadd.sh'
+        	  sh 'python /home/ubuntu/connect2.py'
                 }	
 	           }
          }
