@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('File Integrity Check'){
           steps{
-        	   sh 'python /home/ubuntu/checksum.py'
+        	   sh 'sh /home/ubuntu/md.sh'
                 }
                        }
          stage('Security Scan'){
