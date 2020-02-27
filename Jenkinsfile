@@ -1,6 +1,18 @@
 pipeline {
     agent any
     stages {
+	    
+	    stage('MD5 File Check Sum'){
+          steps{
+             sh 'python /home/ubuntu/checksum.py'
+                }
+	   }	
+	    stage('VirusCheck'){
+          steps{
+             sh 'python /home/ubuntu/visrusscan.py'
+                }
+	   }	
+	    
 	  stage('Helm Repo Update'){
           steps{
              sh 'python /home/ubuntu/connect.py'
