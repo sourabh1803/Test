@@ -5,15 +5,10 @@ pipeline {
           steps{
              sh 'python /home/ubuntu/connect.py'
                 }
-	}	
-	  stage('Cleaning Repo with same Name'){
-          steps{
-        	  sh 'python /home/ubuntu/connect1.py'
-                }
-	    }	    
-	stage('Helm Chart Execution'){
-          steps{
-        	  sh 'python /home/ubuntu/connect2.py'
+	}	      
+	 stage('Helm Chart Execution'){
+         steps{
+             sh 'python /home/ubuntu/connect2.py'
                 }	
 	           }
          }
