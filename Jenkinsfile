@@ -8,7 +8,7 @@ pipeline {
 	   }	
 	  stage('VirusCheck'){
           steps{
-             sh 'python /home/ubuntu/virussscan.py'
+             sh 'python /home/ubuntu/scn.py'
                 }
 	   }	
 	  stage('Helm Repo Update'){
