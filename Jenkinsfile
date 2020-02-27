@@ -1,12 +1,8 @@
 pipeline {
     agent any
     stages {
-	  stage('Downloding Charts from Remote'){
-          steps{
-             sh 'python /home/ubuntu/newt.py'
-                }
-	  } 	  
-	   stage('MD5 File Check Sum'){
+	  	  
+	  stage('MD5 File Check Sum'){
           steps{
              sh 'python /home/ubuntu/checksum.py'
                 }
