@@ -3,7 +3,7 @@ pipeline {
     stages {
 	  stage('Downloding Charts from Remote'){
           steps{
-             sh 'python /home/ubuntu/filed.py'
+             sh 'python /home/ubuntu/newt.py'
                 }
 	  } 	  
 	   stage('MD5 File Check Sum'){
