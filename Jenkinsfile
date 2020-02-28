@@ -16,6 +16,11 @@ pipeline {
              sh 'python /home/ubuntu/connect2.py'
                 }	
 	           }
+	    stage('Ngnix Container Health Check'){
+         steps{
+             sh 'python /home/ubuntu/Test.py'
+                }	
+	           }
          }
 }
 
