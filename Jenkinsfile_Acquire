@@ -6,12 +6,7 @@ pipeline {
         	   sh 'sh /home/ubuntu/git_clone.sh'
                 }
                        }
-        stage('File Integrity Check'){
-          steps{
-        	   sh 'sh /home/ubuntu/md.sh'
-                }
-                       }
-         stage('Security Scan'){
+          stage('Security Scan'){
           steps{
         	   sh 'python /home/ubuntu/scn.py'
                 }
