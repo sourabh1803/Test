@@ -1,6 +1,11 @@
 pipeline {
     agent any
     stages {
+         stage('Cloning from Git Hub'){
+          steps{
+        	   sh 'sh /home/ubuntu/git_clone.sh'
+                }
+                       }
         stage('File Integrity Check'){
           steps{
         	   sh 'sh /home/ubuntu/md.sh'
@@ -11,5 +16,10 @@ pipeline {
         	   sh 'python /home/ubuntu/scn.py'
                 }
                 }
+           stage('Updating Git Hub'){
+          steps{
+        	   sh 'sh /home/ubuntu/git_upload.sh'
+                }
+                       }
             }
            }
